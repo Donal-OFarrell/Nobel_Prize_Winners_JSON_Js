@@ -1,0 +1,103 @@
+/* Error handling taken directly from here https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation */ 
+/*ERROR HANDLING */
+input[type="number"],
+textarea,
+fieldset {
+  width : 20%;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+/* MAIN STYLING */
+
+html, body {
+    margin:20px;
+    height:100vh; /*FCC grid puts it all on one line */
+    font-family:Arial, Helvetica, sans-serif; 
+}
+
+/* POSITIONING */
+
+p{
+    text-align:center;
+}
+#searchBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+#forSpace{
+    display: grid;
+    grid-template-rows: 50px;
+}
+
+
+#dataWrapper{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+#dataHere{
+    width:100%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    
+}
+
+#extraDataHere{
+    width: 100%;
+    grid-column-start: 7;
+    grid-column-end: 13;
+    
+}
+
+/* TABLE AND BUTTON STYLING */
+
+.button{
+    border-color:rgb(179, 179, 179);
+    border-width: 0.1rem;
+    font-size: 1rem;
+    background-color: rgb(25,123,135,0.2);
+    
+}
+
+.button:hover{ /*I originally saw this on a youtube tutorial, then it was brought up in lectures. */
+    background-color:rgb(179, 179, 179);
+    color: white;
+}
+
+
+#myBtn{
+    border-color:rgb(179, 179, 179);
+    border-width: 0.1rem;
+    font-size: 1rem;
+    background-color: rgb(25,123,135,0.2);
+    
+}
+
+#myBtn:hover{ /*I originally saw this on a youtube tutorial, then it was brought up in lectures. */
+    background-color:rgb(179, 179, 179);
+    color: white;
+}
+
+table{
+    width:100%;
+    border-collapse: collapse; /*this overrides border-radius- originally I wanted a rounded table too- but it looked fine so I abandoned the idea. */
+    
+}
+
+th{
+    border-style: solid;
+    border-color:rgb(179, 179, 179); 
+    font-size: 0.9rem;
+}
+
+tr {
+    text-align: left;
+}
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="nobels.css">
+</head>
+
+<body>
+
+
+<p id="searchInfo">Choose a range of years to see Nobel Prize winners <strong>(required)</strong>.<br>You can also select by category or gender <strong>(optional)</strong>.<br> Make your selection and push the submit button.<br> Click on more info for further information on a given laureate. </p> 
+
+<div id="searchBar"><!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation -->
+    
+    <select id="discipline" name="discipline">
+    
+        <option>Nobel select</option>
+        <input type="number" min="1970" max="2018" name="firstYear" id="firstYear" required placeholder="Start Year(1970 - 2018)">
+
+        <input type="number" min="1970" max="2018" name="secondYear" id="secondYear" required placeholder="End Year(1970-2018)">
+        <button id="myBtn">Submit</button>
+
+        <input id="allWinners" type="radio" name="gender" value="all winners"> All winners<br>
+        <input id="male" type="radio" name="gender" value="male"> Male<br>
+        <input id="female" type="radio" name="gender" value="female"> Female<br>
+
+
+        <!-- https://www.w3schools.com/tags/att_option_value.asp  -->
+
+
+    </select>
+</div>
+
+<div id="forSpace"> </div>
+
+<div id="dataWrapper">
+
+<div id="dataHere"> </div>
+
+<div id="extraDataHere"> </div>
+
+
+</div>
+
+
+
+
+    <script src="nobels.js"> </script>
+</body>
+
+</html>
